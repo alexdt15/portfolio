@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import ProfileCard from "./components/profile/ProfileCard";
+import Experience from "./components/experience/Experience";
+import companyLogo from "/assets/images/bestseller-logo.jpeg";
+import companyLogoBlack from "/assets/images/bestseller-logo-black.jpeg";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const experienceList = [
+    {
+      title: "Bestseller",
+      description: "Fashion company",
+      date: "Sep-2022 - Current",
+      role: "Full-Stack Developer",
+      businessLogo: companyLogo,
+    },
+    {
+      title: "Bestseller",
+      role: "Full-Stack Developer Trainee",
+      date: "Mar-2022 - Sep-2022",
+      description:
+        "Participate in all the various aspects of Front/Back end development",
+      businessLogo: companyLogoBlack,
+    },
+  ];
 
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <ProfileCard />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="skills-experience">
+        <div>
+          <p>I'm the Skills Component!</p>
+        </div>
+        <Experience experienceList={experienceList} />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
