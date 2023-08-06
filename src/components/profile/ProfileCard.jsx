@@ -10,18 +10,18 @@ export default function ProfileCard() {
         <div className="headers">
           <div className="name">
             <h3>Alejandro Delgado</h3>
-            <p>Full-Stack Developer</p>
+            <p className="underline">Full-Stack Developer</p>
           </div>
           <div className="contact">
             <div className="">
               <span>
-                <HiPhone className="vertical-align" />
+                <HiPhone className="icon" />
               </span>
               <p>664666270</p>
             </div>
             <div className="">
               <span>
-                <HiMail className="vertical-align " />
+                <HiMail className="icon" />
               </span>
               <p>alejandro.delgadotrujillo@outlook.com</p>
             </div>

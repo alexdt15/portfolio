@@ -5,7 +5,7 @@ export default function Experience({ experienceList }) {
   return (
     <div className="exp-container">
       <h2>
-        Experience <FaLaptopCode className="aligned" />
+        Experience <FaLaptopCode className="icon" />
       </h2>
       {experienceList.map((experience, i) => {
         return (

@@ -1,6 +1,7 @@
 import "./App.css";
 import ProfileCard from "./components/profile/ProfileCard";
 import Experience from "./components/experience/Experience";
+import Skills from "./components/skills/Skills";
 import companyLogo from "/assets/images/bestseller-logo.jpeg";
 import companyLogoBlack from "/assets/images/bestseller-logo-black.jpeg";
 
@@ -8,9 +9,10 @@ function App() {
   const experienceList = [
     {
       title: "Bestseller",
-      description: "Fashion company",
       date: "Sep-2022 - Current",
       role: "Full-Stack Developer",
+      description:
+        "Design and develop the planning and forecast software required for a granular control of stock, sales of goods across the world. Maintain and extend the datamodel, work on server efficiency and provide a smooth UI experience",
       businessLogo: companyLogo,
     },
     {
@@ -29,9 +31,7 @@ function App() {
         <ProfileCard />
       </div>
       <div className="skills-experience">
-        <div>
-          <p>I'm the Skills Component!</p>
-        </div>
+        <Skills />
         <Experience experienceList={experienceList} />
       </div>
     </>
