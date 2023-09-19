@@ -1,6 +1,7 @@
 import "./App.css";
 import ProfileCard from "./components/profile/ProfileCard";
 import Experience from "./components/experience/Experience";
+import Hobbies from "./components/hobbies/Hobbies";
 import Skills from "./components/skills/Skills";
 import companyLogo from "/assets/images/bestseller-logo.jpeg";
 import companyLogoBlack from "/assets/images/bestseller-logo-black.jpeg";
@@ -33,6 +34,9 @@ function App() {
       <div className="skills-experience">
         <Skills />
         <Experience experienceList={experienceList} />
+      </div>
+      <div className="hobbies-blog">
+        <Hobbies />
       </div>
     </>
   );

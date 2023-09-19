@@ -9,7 +9,7 @@ export default function ProfileCard() {
       <div className="content">
         <div className="headers">
           <div className="name">
-            <h3>Alejandro Delgado</h3>
+            <h2>Alejandro Delgado</h2>
             <p className="underline">Full-Stack Developer</p>
           </div>
           <div className="contact">

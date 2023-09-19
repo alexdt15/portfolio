@@ -20,6 +20,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.hobbies-blog {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-between;
+}
+
 .icon {
   vertical-align: middle;
   color: #2f69b5ee;
