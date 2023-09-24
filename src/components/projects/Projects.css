@@ -1,0 +1,25 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  width: min(724px, 60%);
+  flex-shrink: 0;
+}
+.projects-title {
+  padding: 4px 12px;
+  text-align: justify;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 2px 3px 10px 0px #ccc;
+}
+.projects-title h2 {
+  padding-left: 8px;
+}
+
+.projects {
+  margin-top: 2vh;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-shadow: 2px 3px 10px 0px #ccc;
+}

@@ -5,6 +5,7 @@ import Hobbies from "./components/hobbies/Hobbies";
 import Skills from "./components/skills/Skills";
 import companyLogo from "/assets/images/bestseller-logo.jpeg";
 import companyLogoBlack from "/assets/images/bestseller-logo-black.jpeg";
+import Projects from "./components/projects/Projects";
 
 function App() {
   const experienceList = [
@@ -35,8 +36,9 @@ function App() {
         <Skills />
         <Experience experienceList={experienceList} />
       </div>
-      <div className="hobbies-blog">
+      <div className="hobbies-projects">
         <Hobbies />
+        <Projects />
       </div>
     </>
   );
